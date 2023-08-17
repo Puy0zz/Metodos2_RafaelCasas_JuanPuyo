@@ -22,7 +22,7 @@ float parabolic(float H_param, float v_param)
     
     while (i == "GO"){
         
-        t_new=t+0.1;
+        t_new=t+0.001;
         float current= x(t,H_param,v_param,g);
         
         float nw=x(t_new,H_param,v_param,g);
@@ -40,7 +40,7 @@ float parabolic(float H_param, float v_param)
     }
     
     
-    return t;
+    return t*180/3.14159265359;
     
     
 
